@@ -1,0 +1,27 @@
+.fondo {
+    width: 1330px;
+    height: 600px;
+    background-color: #19171D;
+    position: fixed;
+}
+
+div.menu {
+    width: 100px;
+    height: 600px;
+    font-size: 20px;
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+.centro {
+    width: 1100px;
+    height: 600px;
+    background-color: #222529;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
