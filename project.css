@@ -1,13 +1,13 @@
 .fondo {
-    width: 1330px;
-    height: 600px;
+    width: 1355px;
+    height: 800px;
     background-color: #19171D;
     position: fixed;
 }
 
 div.menu {
     width: 100px;
-    height: 600px;
+    height: 800px;
     font-size: 20px;
     color: white;
 }
@@ -18,10 +18,68 @@ a:link {
 
 .centro {
     width: 1100px;
-    height: 600px;
+    height: 800px;
     background-color: #222529;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    /*margin-bottom: 10px;*/
+    margin-left: 10px;
+    padding-top: 10px;
+    /*margin-top: 10px;*/
+}
+
+.chat .user-photo {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 10%;
+}
+
+.chat .user-photo img {
+    width: 100%;
+}
+
+.chat .chat-message {
+    width: 70%;
+    padding: 15px;
+    margin: 0px 5px 0;
+    font-size: 15px;
+}
+
+.chatInput textarea {
+    width: 90%;
+    height: 20px;
+    background-color: #222529;
+    font-size: 18px;
+    font-style: sans-serif;
+    color: #656769;
+    border-color: #656769;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.chatInput input {
+    float: right;
+    padding: 4px;
+    margin-right: 22px;
+    margin-top: 10px;
+}
+
+.chatInput textarea:focus {
+    background-color: #19171D;
+}
+
+
+
