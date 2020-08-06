@@ -1,4 +1,4 @@
-.fondo {
+* {
     width: 1355px;
     height: 800px;
     background-color: #19171D;
@@ -16,7 +16,7 @@ a:link {
     color: white;
 }
 
-.centro {
+.chat-logs {
     width: 1100px;
     height: 800px;
     background-color: #222529;
@@ -28,7 +28,7 @@ a:link {
     overflow-y: scroll;
 }
 
-.chat {
+.chat-logs .chat {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -38,18 +38,18 @@ a:link {
     /*margin-top: 10px;*/
 }
 
-.chat .user-photo {
+.chat-logs .chat .user-photo {
     width: 60px;
     height: 60px;
     background: #ccc;
     border-radius: 10%;
 }
 
-.chat .user-photo img {
+.chat-logs .chat .user-photo img {
     width: 100%;
 }
 
-.chat .chat-message {
+.chat-logs .chat .chat-message {
     width: 70%;
     padding: 15px;
     margin: 0px 5px 0;
