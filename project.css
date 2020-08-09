@@ -1,12 +1,3 @@
-/*
-.fondo {
-    width: 1355px;
-    height: 800px;
-    background-color: #19171D;
-    position: fixed;
-    
-}
-*/
 div.menu {
     width: 300px;
     height: 800px;
@@ -23,6 +14,17 @@ a:link {
     color: white;
 }
 
+ul {
+    list-style: none;
+}
+
+li a:hover {
+    color: #1164A3;
+}
+li a:active {
+    color: #1164A3;
+}
+
 .chat-logs {
     width: 1100px;
     height: 800px;
@@ -33,16 +35,16 @@ a:link {
     bottom: 0;
     overflow-y: scroll;
     overflow-x: hidden;
+    list-style: none;
 }
 
 .chat-logs .chat {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    /*margin-bottom: 10px;*/
     margin-left: 10px;
     padding-top: 10px;
-    /*margin-top: 10px;*/
+    list-style: none;
 }
 
 .chat-logs .chat .user-photo {
@@ -56,8 +58,14 @@ a:link {
     width: 100%;
 }
 
+.chat-logs .chat .user-name {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
 .chat-logs .chat .chat-message {
-    width: 70%;
+    width: 80%;
     padding: 15px;
     margin: 0px 5px 0;
     font-size: 15px;
@@ -65,7 +73,7 @@ a:link {
 }
 
 .chatInput textarea {
-    width: 90%;
+    width: 970px;
     height: 20px;
     background-color: #222529;
     font-size: 18px;
@@ -73,7 +81,6 @@ a:link {
     color: #656769;
     border-color: #656769;
     border-radius: 3px;
-    margin-left: 10px;
     margin-top: 10px;
     resize: none;
 }
@@ -82,6 +89,7 @@ a:link {
     float: right;
     padding: 4px;
     margin-right: 22px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
