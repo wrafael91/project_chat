@@ -1,4 +1,4 @@
-div.menu {
+#menu {
     width: 300px;
     height: 800px;
     font-size: 20px;
@@ -10,19 +10,9 @@ div.menu {
     position: fixed;
 }
 
-a:link {
-    color: white;
-}
-
-ul {
+.hover1 {
     list-style: none;
-}
-
-li a:hover {
-    color: #1164A3;
-}
-li a:active {
-    color: #1164A3;
+    color: #656769;
 }
 
 .chat-logs {
