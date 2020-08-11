@@ -1,5 +1,10 @@
-$(document).ready(function() {
-    (".menu").on('hover',function(){
-        $(this).css({'color':'#1164A3'})
+$( "li" )
+    .hover(function() {
+      $( this )
+        .toggleClass( "active" )
+        .next()
+          .stop( true, true )
+          
     });
-});
+    
+   
