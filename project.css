@@ -1,20 +1,28 @@
-#menu {
+.menu {
     width: 300px;
     height: 800px;
     font-size: 20px;
     background-color: #19171D;
-    color: white;
     top: 0;
     left: 0;
     bottom: 0;
     position: fixed;
 }
 
-.hover1 {
+.menu .hover1 {
     list-style: none;
-    color: #656769;
+    margin-left: 20px;
+    color: white;
 }
 
+.menu li {
+    cursor: default;
+}
+
+li.active {
+    background: #1164A3;
+    color: white;
+}
 .chat-logs {
     width: 1100px;
     height: 800px;

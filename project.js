@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    ("#menu").on(function(){
-        $("this").css({'color':'blue'})
+    (".menu").on('hover',function(){
+        $(this).css({'color':'#1164A3'})
     });
 });
