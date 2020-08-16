@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Proyecto Make it Real</title>
     <style>
         A{text-decoration: none;}
@@ -11,58 +12,25 @@
 </head>
 <body>
     <div class="menu">
-        <ul class="hover1">
+        <ul class="hoverChannels">
             <li><a href="#">General</a></li>
             <li><a href="#">CSS</a></li>
             <li><a href="#">HTML</a></li>
             <li><a href="#">JavaScript</a></li>
         </ul>
-    </div>          
-    <div class="chat-logs">
+    </div>   
+    <section class="chatSection">
         <div class="chat">
-            <div class="user-photo"><img src="http://lorempixel.com/50/50/sports/5/"></div> 
-            <div class="chat-message">
-                <div>
-                    <a href="#" class="user-name">Victor</a>
-                    <span class="date">17:00</span>
-                </div>
-                <div>
-                    <span>Hola, qué más?</span>  
-                </div>
-            </div>      
-        </div>
-        <div class="chat">
-            <div class="user-photo"><img src="http://lorempixel.com/50/50/"></div>
-            <div class="chat-message">
-                <div>
-                    <a href="#" class="user-name">Andrés</a>
-                    <span class="date">17:06</span>
-                </div>
-                <div>
-                    <span>Bien, y ud qué cuenta?</span>  
-                </div>  
-            </div>
-        </div>
-        <div class="chat">
-            <div class="user-photo"><img src="http://lorempixel.com/50/50/sports/5/"></div>      
-            <div class="chat-message">
-                <div>
-                    <a href="#" class="user-name">Victor</a>
-                    <span class="date">17:06</span>
-                </div>
-                <div>
-                    <span>Nada, programando, jeje</span>  
-                </div>
-        </div>
-        
-        <div class="chatInput">                              
-            <form action="">
-                <textarea>Enviar mensaje a</textarea>
-                    <input type="Submit" class="button-send">
-            </form>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="project.js"></script>
-    </div>  
+
+        </div>       
+    <div>                              
+        <form class="chatInput">
+            <input id="enterMessage" type="text" autocomplete="off" placeholder="Enviar mensaje a">
+            <button type="Submit" class="button-send"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="project.js"></script>
 </body>
 </html>
