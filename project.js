@@ -25,7 +25,7 @@ $send.addEventListener("click", () => {
         };
         printMessage(message);
         messages.push(messages);
-
+//babababa
         $input.value = "";
     }
 })
