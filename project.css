@@ -32,6 +32,8 @@
 
 
 .chatSection {
+    display: flex;
+    flex-direction: column;
     width: 1100px;
     height: 800px;
     background-color: #222529;
@@ -40,13 +42,12 @@
     right: 0;
     bottom: 0;
     overflow-y: scroll;
-    overflow-x: hidden;
     list-style: none;
 }
-
+/*
 .chatSection .chat {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: flex-start;
     margin-left: 10px;
     padding-top: 10px;
@@ -54,6 +55,8 @@
 }
 
 .chatSection .chat .user-photo {
+    display: flex;
+    flex-direction: column;
     width: 60px;
     height: 60px;
     background: #ccc;
@@ -61,23 +64,31 @@
 }
 
 .chatSection .chat .user-photo img {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 
 }
-
+*/
 .chatSection .chat .user-name {
+    display: flex;
+    flex-direction: column;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
 }
 
 .chatSection .chat .chat-message {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     text-align: right;
     margin: 10px 5px 10;
     font-size: 15px;
     color: white;
 }
+
+
 
 .chatInput input {
     width: 1000px;
@@ -92,6 +103,7 @@
     margin-left: 20px;
     margin-top: 10px;
     resize: none;
+    position: sticky;
 }
 
 .chatInput .button-send {

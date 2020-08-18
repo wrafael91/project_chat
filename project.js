@@ -5,57 +5,34 @@ $( "li" ).hover(function() {
 $("li").click(function() {
     $(this).toggleClass()
 });
-
+const messages = [];
 const $input = document.querySelector("#enterMessage");
 const $send = document.querySelector(".button-send");
 const $chat = document.querySelector(".chat");// contenedor
 
-$send.addEventListener("click", () => {
+$send.addEventListener("click", sendMessage);
+    
+function sendMessage() {
     const value = $input.value;
-
     if (value !== "") {
         const now = new Date();
         const message = {
             time: `${now.getHours()}:${now.getMinutes()}`,
             content: value,
             author: {
-                name: "Link",
+                name: "Rafael",
                 image: "http://lorempixel.com/50/50/sports/",
             },
         };
         printMessage(message);
-        messages.push(messages);
-//babababa
+        messages.push(message);
+
         $input.value = "";
     }
-})
+}
 
-const messages = [ 
-    {
-    time: "16:25",
-    content: "Hola, qué más?",
-    author: {
-        name: "Luisa 'La Loca'",
-        image: "http://lorempixel.com/50/50/sports/5/",
-        },
-    },
-    {
-    time: "16:27",
-    content: "Bien, qué cuenta?",
-    author: {
-        name: "Pedro Pérez",
-        image: "http://lorempixel.com/50/50/sports/5/",
-        },
-    },
-    {
-    time: "16:30",
-    content: "Nada, acá programando",
-    author: {
-        name: "Luisa 'La Loca'",
-        image: "http://lorempixel.com/50/50/sports/5/",
-        },
-    },
-]
+
+
 
 function printMessage(message) {
     const {author, time, content} = message;
