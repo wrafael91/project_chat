@@ -5,6 +5,11 @@ $( "li" ).hover(function() {
 $("li").click(function() {
     $(this).toggleClass()
 });
+
+$("form").on('submit', function(event) {
+    event.preventDefault();
+});
+
 const messages = [];
 const $input = document.querySelector("#enterMessage");
 const $send = document.querySelector(".button-send");

@@ -80,7 +80,7 @@
 
 .chatSection .chat .chat-message {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
     text-align: right;
     margin: 10px 5px 10;
@@ -94,6 +94,7 @@
     width: 1000px;
     height: 20px;
     background-color: #222529;
+    display: flex;
     font-size: 18px;
     font-style: sans-serif;
     color: #656769;
