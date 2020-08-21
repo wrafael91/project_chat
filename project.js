@@ -19,14 +19,14 @@ $send.addEventListener("click", sendMessage);
   
 function sendMessage() {
   const value = $input.value;
-  let minutes = now.getMinutes();
-  if (minutes < 10) {
-      minutes1 = "0" + minutes;
-  }
+  const now = new Date();
+        let minutes = now.getMinutes();
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
   if (value !== "") {
-      const now = new Date();
-      const message = {
-          time: `${now.getHours()}:${minutes1}`,
+        const message = {
+          time: `${now.getHours()}:${minutes}`,
           content: value,
           author: {
               name: "Rafael",
