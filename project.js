@@ -13,7 +13,7 @@ $("form").on('submit', function(event) {
 const messages = [];
 const $input = document.querySelector("#enterMessage");
 const $send = document.querySelector(".button-send");
-const $chat = document.querySelector(".chat");// contenedor
+const $chat = document.querySelector(".chat");
 
 $send.addEventListener("click", sendMessage);
   
