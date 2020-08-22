@@ -13,7 +13,7 @@ $("form").on('submit', function(event) {
 const messages = [];
 const $input = document.querySelector("#enterMessage");
 const $send = document.querySelector(".button-send");
-const $chat = document.querySelector(".chat");
+const $chat = document.querySelector(".messages");
 
 $send.addEventListener("click", sendMessage);
   
@@ -40,27 +40,21 @@ function sendMessage() {
   }
 }
 
-
-
-
 function printMessage(message) {
   const {author, time, content} = message;
   const template = 
   `<div class="chat">
-  <div class="user-photo"><img src="${author.image}"></div> 
-  <div class="chat-message">
-      <div>
-          <a href="#" class="user-name">${author.name}</a>
-          <span class="date">${time}</span>
+      <div class="photo"><img src="${author.image}"></div>
+      <div class="content">
+          <div class="metadata">
+              <div class="name">${author.name}</div>
+              <div class="time">${time}</div> 
+          </div>
+          <div class="message">${content}</div>
       </div>
-      <div>
-          <span>${content}</span>  
-      </div>
-  </div>      
   </div>`;
 $chat.innerHTML += template;
 }
-
 
 for (let i = 0; i < messages.length; i++) {
   printMessage(messages[i]);
