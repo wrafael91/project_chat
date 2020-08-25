@@ -60,5 +60,26 @@ for (let i = 0; i < messages.length; i++) {
   printMessage(messages[i]);
 }
 
+function printMessages() {
+  for (let i = 0; i < messages.length; i++) {
+    printMessage(messages[i]);
+  }
+}
 
+$.get("https://jsonplaceholder.typicode.com/comments").then((response) => {
+  response.forEach((result) => {
+    const now = new Date();
+    const message = {
+      time: `${now.getHours()}:${now.getMinutes()}`,
+      content: result.body,
+      author: {
+        name: result.name,
+        image: "http://lorempixel.com/50/50/sports/"
+      }
+    };
 
+    messages.push(message);
+  });
+
+  printMessages();
+});
